@@ -1,2 +1,3 @@
 # waterrmalann.github.io
- Github Portfolio
+
+My personal development portfolio and blog built with [Zola](https://www.getzola.org/), deployed on GitHub Pages.
