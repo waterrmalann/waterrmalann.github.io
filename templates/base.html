@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>waterrmalann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
+    </head>
+
+    <body>
+        <div class="nav container">
+            <nav class="navbar">
+                <h3>waterrmalann</h3>
+                <ul>
+                    <li><a href="#">/about</a></li>
+                    <li><a href="#">/projects</a></li>
+                    <li><a href="{{ get_url(path='@/blog/_index.md') }}">/posts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="section container">
+            <div>
+                {% block content %} {% endblock %}
+            </div>
+        </section>
+    </body>
+</html>
