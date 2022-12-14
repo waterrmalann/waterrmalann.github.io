@@ -16,9 +16,10 @@
             <nav class="navbar">
                 <h3>waterrmalann</h3>
                 <ul>
-                    <li><a href="#">/about</a></li>
-                    <li><a href="#">/projects</a></li>
-                    <li><a href="{{ get_url(path='@/blog/_index.md') }}">/posts</a></li>
+                    <li><a class="navlink" href="#">/about</a></li>
+                    <li><a class="navlink" href="#">/projects</a></li>
+                    <li><a class="navlink" href="{{ get_url(path='@/blog/_index.md') }}">/posts</a></li>
+                    <li><a class="navlink" href="https://alanvarghese.me">/portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,5 +28,9 @@
                 {% block content %} {% endblock %}
             </div>
         </section>
+        <footer class="footer container">
+            <hr>
+            <p>Crafted with 💝 by Alan.</p>
+        </footer>
     </body>
 </html>

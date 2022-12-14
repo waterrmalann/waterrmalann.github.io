@@ -13,10 +13,9 @@ html, body {
 
 a, a:visited, a:active {
     text-decoration: none;
-    color: inherit;
-    border-bottom: 3px solid red;
+    color: red;
     &:hover {
-        color: red;
+        color: darkred;
     }
 }
 
@@ -33,12 +32,76 @@ nav.navbar {
         display: flex;
         gap: 2rem;
         list-style: none;
-        > li a {
+        > li a.navlink {
             font-family: 'Roboto Mono', monospace;
+            border-bottom: 3px solid red;
+            &:hover, &-active {
+                color: darkred;
+            }
         }
     }
 }
 
+.footer {
+    padding-block: 1rem;
+    text-align: center;
+    hr {
+        opacity: 0.4;
+    }
+}
+
 ul.postlinks {
-    list-style:square;
+    list-style: none;
+    padding:0;
+}
+
+.postlink {
+    padding-block: 0.8rem;
+    padding-left: 2rem;
+    border-left: 6px solid red;
+    border-block: 2px solid rgba(14, 14, 14, 0.15);
+    border-right: 2px solid rgba(14, 14, 14, 0.15);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-block: 2rem;
+    transition: .2s;
+    &:hover {
+        border-block: 2px solid rgba(14, 14, 14, 0.25);
+        border-right: 2px solid rgba(14, 14, 14, 0.25);
+        transition: .2s;
+    }
+
+    &__title {
+        font-weight: bold;
+        color: red;
+        &::before {
+            content: '#   ';
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__date {
+        display: block;
+        font-size: 0.85rem;
+        color: gray;
+    }
+}
+
+.blog-article {
+    // width: min(80%, 90%);
+    // margin-inline: auto;
+    background-color: #f5f5f5;
+    padding-block: 0.85rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+    &__title {
+        margin-bottom:0;
+    }
+    &__date {
+        margin-top:0;
+        color: red;
+        font-size: 0.85rem;
+    }
 }

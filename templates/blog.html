@@ -5,9 +5,15 @@
   {{ section.title }}
 </h1>
 <ul class="postlinks">
-  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+    {% for page in section.pages %}
+        <li>
+            <div class="postlink">
+                <a class="postlink__title" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+                <span class="postlink__date">{{ page.date }}</span>
+            </div>
+        </li>
+    {% endfor %}
 </ul>
+<p>Old posts were migrated from my <a href="https://shinysheeppizza.tumblr.com/">Tumblr</a>.</p>
 {% endblock content %}
