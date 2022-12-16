@@ -1,5 +1,5 @@
 +++
-title = "Creating pseudofonts using unicode characters"
+title = "Creating pseudofonts using unicode characters."
 date = 2021-03-11
 +++
 

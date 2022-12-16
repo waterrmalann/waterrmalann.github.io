@@ -1,5 +1,5 @@
 +++
-title = "Conversational Games Bot"
+title = "A chat bot to play conversational games with."
 date = 2021-01-19
 +++
 
