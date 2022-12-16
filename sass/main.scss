@@ -109,3 +109,14 @@ ul.postlinks {
         font-size: 0.85rem;
     }
 }
+
+.img {
+    display: block;
+    &--centered {
+        margin-inline: auto;
+        text-align: center;
+    }
+    &--fullwidth {
+        width: 100%;
+    }
+}
