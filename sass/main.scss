@@ -178,6 +178,7 @@ ul.postlinks {
     align-items: center;
     justify-content: center;
     flex-direction: column;*/
+    text-align: center;
     display: grid;
     place-items: center;
     place-content: center;
@@ -203,6 +204,7 @@ ul.postlinks {
         padding: 0;
         display: flex;
         gap: 2rem;
+        flex-wrap:wrap;
 
         li {
             border: 2px solid rgba(14, 14, 14, 0.15);
