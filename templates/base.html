@@ -10,6 +10,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
     </head>
 
@@ -18,7 +20,7 @@
             <nav class="navbar">
                 <h3>waterrmalann</h3>
                 <ul>
-                    <li><a class="navlink" href="#">/about</a></li>
+                    <li><a class="navlink" href="{{ get_url(path='@/about.md') }}">/about</a></li>
                     <li><a class="navlink" href="{{ get_url(path='@/projects/_index.md') }}">/projects</a></li>
                     <li><a class="navlink" href="{{ get_url(path='@/blog/_index.md') }}">/posts</a></li>
                     <li><a class="navlink" href="https://alanvarghese.me">/portfolio</a></li>
@@ -26,9 +28,7 @@
             </nav>
         </div>
         <section class="section container">
-            <div>
-                {% block content %} {% endblock %}
-            </div>
+            {% block content %} {% endblock %}
         </section>
         <footer class="footer container">
             <hr>
