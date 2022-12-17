@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  Github Portfolio + Blog
-</h1>
-<p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my posts.</p>
+<div class="section">
+    <div class="main">
+        <img src="https://avatars.githubusercontent.com/u/56948680" alt="Avatar" class="main__avatar">
+        <h1 class="main__title">Alan Varghese</h1>
+        <p class="main__subtitle">Developer. Tinkerer. Malware Enthusiast.</p>
+        <ul class="main__social-icons">
+            <li><a href="https://github.com/waterrmalann"><i aria-hidden="true" class="fa-brands fa-fw fa-github"></i></a></li>
+            <li><a href="https://dribbble.com/waterrmalann"><i aria-hidden="true" class="fa-brands fa-fw fa-dribbble"></i></a></li>
+            <li><a href="https://twitter.com/waterrmalann"><i aria-hidden="true" class="fa-brands fa-fw fa-twitter"></i></a></li>
+            <li><a href="https://telegram.me/waterrmalann"><i aria-hidden="true" class="fa-brands fa-fw fa-telegram"></i></a></li>
+        </ul>
+    </div>
+</div>
 {% endblock content %}
