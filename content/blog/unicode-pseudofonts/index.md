@@ -25,7 +25,7 @@ Of course, we need to define fonts this way for it to work. So I went ahead and 
 
 ### As a telegram bot.
 
-Obviously converting text using a command line utility is inconvenient and slow. I mostly use Telegram for conversations and recently having been made a bot for [Chat Games](https://waterrmalann.github.io/blog/conversational-games-bot), I figured it would be a cool idea to make a bot to spit out these pseudofonts. Telegram bots can work "inline" where it can be evoked by mentioning it's username and selecting from a set of options the bot gives you which is super quick and way better than adding it to a group and issuing commands. Furthermore, this system also works inside DMs. 
+Obviously converting text using a command line utility is inconvenient and slow. I mostly use Telegram for conversations and recently having been made a bot for [Chat Games](@/blog/conversational-games-bot.md), I figured it would be a cool idea to make a bot to spit out these pseudofonts. Telegram bots can work "inline" where it can be evoked by mentioning it's username and selecting from a set of options the bot gives you which is super quick and way better than adding it to a group and issuing commands. Furthermore, this system also works inside DMs. 
 
 Here's the result!
 
