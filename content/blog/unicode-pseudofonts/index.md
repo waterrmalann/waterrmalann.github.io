@@ -17,7 +17,9 @@ I wanted to try creating my own pseudofonts by mixing various unicode characters
 
 Using Python, I quickly wrote something up that takes in replacement symbols for all the alphabets and creates a generator using those characters.
 
-{{ gist(url="https://gist.github.com/waterrmalann/0f8b400bf64b0412ac895ad9fcf8f3e8") }}
+<div>
+    <script src="https://gist.github.com/waterrmalann/0f8b400bf64b0412ac895ad9fcf8f3e8.js"></script>
+</div>
 
 If you can find a string of consistent, legible, and convincing looking unicode replacement characters for all 26 letters of the English alphabet, you can create your own unicode pseudofont with this simple system.
 
