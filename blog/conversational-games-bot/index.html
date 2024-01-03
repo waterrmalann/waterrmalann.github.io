@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>waterrmalann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" type="text/css" media="screen" href=https://waterrmalann.github.io/main.css />
+    </head>
+
+    <body>
+        <div class="nav container">
+            <nav class="navbar">
+                <h3>waterrmalann</h3>
+                <ul>
+                    <li><a class="navlink" href="https://waterrmalann.github.io/about/">/about</a></li>
+                    <li><a class="navlink" href="https://alanvarghese.me">/portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="section container">
+            
+<article class="blog-article">
+    <h1 class="title blog-article__title">
+      A chat bot to play conversational games with.
+    </h1>
+    <p class="subtitle blog-article__date"><strong>2021-01-19</strong></p>
+    <p>As a way of spending the large amounts of free time I've been getting lately, I've been playing a lot of conversational games (<em>like Truth or Dare, Would You Rather, the usual..</em>) with my friends over Telegram, the chat app. We were collecting the prompts and questions manually from various articles and websites on the internet. Of course, this was a tedious process.</p>
+<p>I then realized if I could just add a chat games bot to the group, it would save us all the time and effort of scouring the internet and instead just shoot us prompts and questions so that it's much easier and convenient. Telegram supports official API-supported bot accounts and so there must be bots that do this, I thought..</p>
+<p>I then started looking for such bots and of course there was. Although I couldn't find bots that had multiple games, I found bots for Truth or Dare and Would You Rather. Unfortunately though, many of them were either offline, unreliable, or mostly gave us NSFW questions which we did not want.</p>
+<p><em>sigh</em>, I decided to screw it and make my own...</p>
+<h4 id="but-before-that">But before that!</h4>
+<p>I had to learn how to make a Telegram bot and after some 10 minutes of googling, I came across an API wrapper written in my favourite language called <a href="https://pypi.org/project/python-telegram-bot/">python-telegram-bot</a> which was perfect because it was so simple I did not even bother reading much of the documentation (<em>I mean like, who has time for that anyways!</em>). And just like a true programmer, I CTRL + C and CTRL + V-ed their example starter bot code into my IDE and started writing away.</p>
+<p>I tried to find free APIs for the games we usually played and was mostly unlucky. But crawling through various Reddit articles, I finally managed to find undocumented APIs for <a href="https://either.io">either.io</a> and <a href="https://willyoupressthebutton.com/">Will You Press The Button</a> which I could take advantage of. For the games I could not find good API solutions for (Truth or Dare, Never Have I Ever, etc..), I decided to make their respective commands read random lines from newline separated .txt files which I later filled with prompts and questions I could find.</p>
+<h4 id="thus-the-chat-games-bot-was-born">Thus, the chat games bot was born!</h4>
+<p>Once I was done with the bot, it featured the following games:</p>
+<ul>
+<li>Truth or Dare</li>
+<li>Would You Rather</li>
+<li>Never Have I Ever</li>
+<li>This or That</li>
+<li>Will You Press The Button</li>
+</ul>
+<p>It all worked out perfectly and we started using it a lot. I also realized that some people were discovering my bot and adding it to their groups with the commands having high usage rates, which did put a smile on my face ;)</p>
+<p>I then open-sourced the bot on my GitHub. <em>Links at the bottom.</em></p>
+<h4 id="bringing-it-to-discord">Bringing it to Discord</h4>
+<p>Inspired by the success of the Chat Games Bot that I made for Telegram, I wanted to bring it to Discord, which too featured an official bot API and lacked similar bots. I already had plenty of experience with Discord bots so this was a pretty easy task, and most of the code from the Telegram version of the bot was reusable including the text files with the questions and prompts. Once I was done, I decided to put it on a <a href="https://top.gg">bot listing</a> site.</p>
+<h4 id="and-then-it-blew-up">And then it blew up...</h4>
+<p>I really wasn't expecting much to happen but I could not be any wrong. The bot literally blew up and was added to over 50 guilds (200+ users) in under a week and hit the maximum cap of 100 servers (as I did not verify the bot) within three weeks. It was by then being used by over 800 unique users and the usage rate was through the roof. I obviously wasn't prepared for this kind of growth so it was really surprising but it also made me happy to see so many people using something that I made.</p>
+<h4 id="the-future">The future.</h4>
+<p>I plan on working on the bots and expanding their question database alongside possibly adding more games like Trivia, Just a minute, and more pretty soon™. Keep an eye on their respective GitHub pages for updates!</p>
+<p>The bot is hosted on Discord 24x7 and you can invite it using this <a href="https://discord.com/api/oauth2/authorize?client_id=793051926953984000&amp;permissions=280640&amp;scope=bot">link</a>. For Telegram, you can add <a href="http://telegram.me/YetAnotherTruthOrDareBot">@YetAnotherTruthOrDareBot</a> to your groups but I would recommend hosting your own instance temporarily because I cannot guarantee 24x7 uptime. It’s actually pretty simple and I’ve provided instructions in the ReadMe file.</p>
+<h4 id="source-code">Source Code</h4>
+<p>Both versions of the bot are completely open-source, AGPLv3 licensed, and available on my GitHub.</p>
+<ul>
+<li>🔗 <a href="https://github.com/waterrmalann/telegram-conversational-games-bot"><strong>Conversational Games Bot | Telegram</strong></a></li>
+<li>🔗 <a href="https://github.com/waterrmalann/discord-conversational-games-bot"><strong>Conversational Games Bot | Discord</strong></a></li>
+</ul>
+<p>That’s it about the chat games bot. Thanks for the read!</p>
+
+</article>
+
+        </section>
+        <footer class="footer container">
+            <hr>
+            <p>Crafted with 💝 by Alan.</p>
+        </footer>
+    </body>
+</html>

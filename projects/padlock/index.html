@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>waterrmalann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" type="text/css" media="screen" href=https://waterrmalann.github.io/main.css />
+    </head>
+
+    <body>
+        <div class="nav container">
+            <nav class="navbar">
+                <h3>waterrmalann</h3>
+                <ul>
+                    <li><a class="navlink" href="https://waterrmalann.github.io/about/">/about</a></li>
+                    <li><a class="navlink" href="https://alanvarghese.me">/portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="section container">
+            
+<article class="blog-article">
+    <h1 class="title blog-article__title">
+      Padlock
+    </h1>
+    <p class="subtitle blog-article__date"><strong>2022-02-26</strong></p>
+    <p>Padlock is single page web application that lets you generate strong and secure passwords as well as check the strength of your existing ones measured in an interesting way of how long it would theoretically take for a malicious individual to crack it. The tool runs locally in your web browser and no information is ever sent to any servers.</p>
+<img src="screenshot.jpg" alt="a screenshot of the web app running" class="img img--centered">
+<p>Padlock has 4 different password generators that uses various approaches to create extremely strong passwords. You can pick your favourite generator all of which are guaranteed to generate cryptographically secure, unique password combinations under optimal conditions. This whole project was written in HTML, CSS, and vanilla JavaScript with a few dependencies.</p>
+<p>The idea of measuring password strength this way was inspired by this web app from <a href="https://www.security.org/how-secure-is-my-password/">security.org</a>. A popular implementation of this type of strength estimation is the <a href="https://github.com/dropbox/zxcvbn">zxcvbn</a> library by Dropbox which Padlock uses.</p>
+<h4 id="available-generators">Available Generators</h4>
+<ul>
+<li><strong>Random String Method:</strong> Generates a completely random string based the parameters provided via the checkboxes and length based on the slider. Usually extremely strong, however not so easy to remember.</li>
+<li><strong>Pseudoword Method:</strong> A method that attempts to generate pronouncable and easy to read passwords. The pronouncability makes it much more easier to remember than a random string. </li>
+<li><strong>Passphrase Method:</strong> A passphrase generator inspired by <a href="https://xkcd.com/936/">this XKCD comic</a>. A long string of words from a Dictionary are generated, making it easy to remember but extremely difficult to crack.</li>
+<li><strong>Pseudoword + Passphrase Method:</strong> A passphrase generator that uses pseudowords instead of real words. Perhaps the strongest generator as the generated passwords are long with words not present in any dictionary.</li>
+</ul>
+<h3 id="links">Links</h3>
+<p>The web app is open-source, MIT licensed, and available on my Github. A live version is also available to play with.</p>
+<ul>
+<li>🔗 <a href="https://waterrmalann.github.io/padlock"><strong>Live Demo</strong></a></li>
+<li>🔗 <a href="https://github.com/waterrmalann/padlock"><strong>Source Code</strong></a></li>
+</ul>
+
+</article>
+
+        </section>
+        <footer class="footer container">
+            <hr>
+            <p>Crafted with 💝 by Alan.</p>
+        </footer>
+    </body>
+</html>
